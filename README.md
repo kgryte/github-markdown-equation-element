@@ -39,10 +39,10 @@ Each `option` corresponds an HTML attribute. For example, to set the image sourc
 
 ``` javascript
 var opts = {
-	'src': 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn.svg'
+	'src': 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg'
 };
 
-var html = createElement();
+var html = createElement( opts );
 // returns '<div class="equation" align="center" data-raw-text="" data-equation="">\n\t<img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">\n\t<br>\n</div>'
 ```
 
@@ -51,10 +51,10 @@ To include a raw equation [TeX][tex] or [LaTeX][latex] `string` in the element, 
 ``` javascript
 var opts = {
 	'equation': '\Gamma ( n ) = (n-1)!',
-	'src': 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn.svg'
+	'src': 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg'
 };
 
-var html = createElement();
+var html = createElement( opts );
 // returns '<div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">\n\t<img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">\n\t<br>\n</div>'
 ```
 
