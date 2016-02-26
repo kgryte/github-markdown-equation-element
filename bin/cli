@@ -68,6 +68,25 @@ if ( args.version ) {
 
 opts = {};
 
+if ( args[ 'class' ] ) {
+	opts.className = args[ 'class' ];
+}
+if ( args.align ) {
+	opts.align = args.align;
+}
+if ( args.text ) {
+	opts.text = args.text;
+}
+if ( args.label ) {
+	opts.label = args.label;
+}
+if ( args.src ) {
+	opts.src = args.src;
+}
+if ( args.alt ) {
+	opts.alt = args.alt;
+}
+
 
 // EQUATION ELEMENT //
 

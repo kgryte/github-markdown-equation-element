@@ -1,5 +1,12 @@
 {
-	"string": [],
+	"string": [
+		"class",
+		"align",
+		"text",
+		"label",
+		"src",
+		"alt"
+	],
 	"boolean": [
 		"help",
 		"version"
