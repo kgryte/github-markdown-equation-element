@@ -43,7 +43,7 @@ var opts = {
 };
 
 var html = createElement();
-// returns '<div class="equation" align="center" data-raw-text="" data-equation="">\n\t<img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn.svg" alt="">\n\t<br>\n</div>'
+// returns '<div class="equation" align="center" data-raw-text="" data-equation="">\n\t<img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">\n\t<br>\n</div>'
 ```
 
 To include a raw equation [TeX][tex] or [LaTeX][latex] `string` in the element, set the `equation` option.
@@ -55,7 +55,7 @@ var opts = {
 };
 
 var html = createElement();
-// returns '<div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">\n\t<img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn.svg" alt="">\n\t<br>\n</div>'
+// returns '<div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">\n\t<img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">\n\t<br>\n</div>'
 ```
 
 
@@ -119,8 +119,8 @@ Options:
 ### Examples
 
 ``` bash
-$ gheqn --equation '\Gamma ( n ) = (n-1)!' --src 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn.svg'
-# => <div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">\n\t<img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn.svg" alt="">\n\t<br>\n</div>
+$ gheqn --equation '\Gamma ( n ) = (n-1)!' --src 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg'
+# => <div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">\n\t<img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">\n\t<br>\n</div>
 ```
 
 
