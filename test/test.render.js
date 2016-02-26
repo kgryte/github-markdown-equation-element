@@ -12,7 +12,7 @@ function setup() {
 	return {
 		'className': 'equation',
 		'align': 'center',
-		'equation': 'y = mx + b',
+		'raw': 'y = mx + b',
 		'label': 'eq:line',
 		'src': 'https://cdn.rawgit.com/math-io/repo/branch/docs/img/eqn.svg',
 		'alt': 'Equation for a line.'

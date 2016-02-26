@@ -35,7 +35,7 @@ var html = createElement();
 The `function` accepts the following `options`:
 *	__className__: element class name. Default: `'equation'`.
 *	__align__: element alignment. Default: `'center'`.
-*	__equation__: raw equation text.
+*	__raw__: raw equation text.
 *	__label__: equation label.
 *	__src__: image source URL.
 *	__alt__: alternative image text.
@@ -56,11 +56,11 @@ var html = createElement( opts );
 */
 ```
 
-To include a raw equation [TeX][tex] or [LaTeX][latex] `string` in the element, set the `equation` option.
+To include a raw equation [TeX][tex] or [LaTeX][latex] `string` in the element, set the `raw` option.
 
 ``` javascript
 var opts = {
-	'equation': '\\Gamma ( n ) = (n-1)!',
+	'raw': '\\Gamma ( n ) = (n-1)!',
 	'src': 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg'
 };
 
@@ -82,7 +82,7 @@ var createElement = require( 'github-markdown-equation-element' );
 var opts = {
 	'className': 'eqn',
 	'align': 'left',
-	'equation': '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt',
+	'raw': '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt',
 	'label': 'eq:erf',
 	'src': 'https://cdn.rawgit.com/math-io/erf/master/docs/img/eqn.svg',
 	'alt': 'Error function.'
@@ -129,7 +129,7 @@ Options:
   -V,  --version            Print the package version.
        --class name         Element class name. Default: equation.
        --align alignment    Element alignment. Default: center.
-       --equation text      Raw equation text.
+       --raw text           Raw equation text.
        --label label        Equation label.
        --src url            Image source URL.
        --alt text           Alternative image text.
@@ -139,7 +139,7 @@ Options:
 ### Examples
 
 ``` bash
-$ gheqn --equation '\Gamma ( n ) = (n-1)!' --src 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg'
+$ gheqn --raw '\Gamma ( n ) = (n-1)!' --src 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg'
 # => <div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">\n\t<img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">\n\t<br>\n</div>
 ```
 

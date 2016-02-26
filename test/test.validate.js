@@ -86,7 +86,7 @@ tape( 'if provided an `align` option which is not an string primitive, the funct
 	t.end();
 });
 
-tape( 'if provided an `equation` option which is not an string primitive, the function returns a type error', function test( t ){
+tape( 'if provided a `raw` option which is not an string primitive, the function returns a type error', function test( t ){
 	var values;
 	var err;
 	var i;
@@ -104,7 +104,7 @@ tape( 'if provided an `equation` option which is not an string primitive, the fu
 
 	for ( i = 0; i < values.length; i++ ) {
 		err = validate( {}, {
-			'equation': values[ i ]
+			'raw': values[ i ]
 		});
 		t.ok( err instanceof TypeError, 'returns a type error when provided ' + values[i] );
 	}
@@ -200,7 +200,7 @@ tape( 'the function returns `null` if all options are valid', function test( t )
 	opts = {
 		'className': 'eqn',
 		'align': 'left',
-		'equation': 'y=x',
+		'raw': 'y=x',
 		'label': 'eq',
 		'src': 'https://cdn.rawgit.com/math-io/erf/master/docs/img/eqn.svg',
 		'alt': 'Error function'

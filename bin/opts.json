@@ -2,7 +2,7 @@
 	"string": [
 		"class",
 		"align",
-		"equation",
+		"raw",
 		"label",
 		"src",
 		"alt"

@@ -12,7 +12,7 @@ function setup() {
 	return {
 		'className': 'equation',
 		'align': 'center',
-		'equation': 'y = mx + b',
+		'raw': 'y = mx + b',
 		'label': 'eq:line',
 		'src': 'https://cdn.rawgit.com/math-io/repo/branch/docs/img/eqn.svg',
 		'alt': 'Equation for a line.'
@@ -77,7 +77,7 @@ tape( 'the function throws an error if provided an invalid option', function tes
 	function badValue( value ) {
 		return function badValue() {
 			var opts = setup();
-			opts.equation = value;
+			opts.raw = value;
 			createElement( opts );
 		};
 	}
