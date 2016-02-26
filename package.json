@@ -17,11 +17,11 @@
   },
   "scripts": {
     "test": "if [ \"${TRAVIS}\" ]; then npm run test-ci; else npm run test-local; fi",
-		"test-local": "tape \"./test/*.js\" | tap-spec",
-		"test-ci": "npm run test-local && xvfb-run npm run test-browsers",
-		"test-cov": "istanbul cover --dir ./reports/coverage --report lcov tape -- \"./test/*.js\"",
-		"test-browsers": "browserify ./test/*.js | testling | tap-spec",
-		"coverage": "istanbul cover --dir ./reports/codecov/coverage --report lcovonly tape -- \"./test/*.js\" && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+    "test-local": "tape \"./test/*.js\" | tap-spec",
+    "test-ci": "npm run test-local && xvfb-run npm run test-browsers",
+    "test-cov": "istanbul cover --dir ./reports/coverage --report lcov tape -- \"./test/*.js\"",
+    "test-browsers": "browserify ./test/*.js | testling | tap-spec",
+    "coverage": "istanbul cover --dir ./reports/codecov/coverage --report lcovonly tape -- \"./test/*.js\" && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
   },
   "main": "./lib",
   "repository": {
@@ -29,32 +29,39 @@
     "url": "git://github.com/kgryte/github-markdown-equation-element.git"
   },
   "keywords": [
-		"utility",
-		"util",
-		"github",
-		"gh",
-		"equation",
-		"html",
-		"eqn",
-		"markdown",
-		"gfm",
-		"createelement",
-		"element",
-		"img",
-		"svg",
-		"render",
-		"tex",
-		"latex",
-		"math",
-		"mathematics"
-	],
+    "utility",
+    "util",
+    "github",
+    "gh",
+    "equation",
+    "html",
+    "eqn",
+    "markdown",
+    "gfm",
+    "create",
+    "element",
+    "img",
+    "svg",
+    "render",
+    "tex",
+    "latex",
+    "math",
+    "mathematics"
+  ],
   "bugs": {
     "url": "https://github.com/kgryte/github-markdown-equation-element/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "update-notifier": "^0.6.0",
+    "utils-copy": "^1.1.0",
+    "validate.io-object": "^1.0.4",
+    "validate.io-string-primitive": "^1.0.0",
+    "validate.io-uri": "^1.0.0"
+  },
   "devDependencies": {
     "browserify": "13.x.x",
-		"codecov": "1.x.x",
+    "codecov": "1.x.x",
     "istanbul": "^0.4.1",
     "jshint": "2.x.x",
     "jshint-stylish": "2.x.x",
