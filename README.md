@@ -76,7 +76,7 @@ var opts = {
 var html = createElement( opts );
 
 console.log( html );
-// returns <string>
+// returns '<div class="eqn" align="left" data-raw-text="\operatorname{erf}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm dt" data-equation="eq:erf">\n\t<img src="https://cdn.rawgit.com/math-io/erf/master/docs/img/eqn.svg" alt="Error function.">\n\t<br>\n</div>'
 ```
 
 To run the example code from the top-level application directory,
