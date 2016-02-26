@@ -14,3 +14,4 @@ var opts = {
 var html = createElement( opts );
 
 console.log( html );
+// returns <string>
