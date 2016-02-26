@@ -50,7 +50,7 @@ To include a raw equation [TeX][tex] or [LaTeX][latex] `string` in the element, 
 
 ``` javascript
 var opts = {
-	'equation': '\Gamma ( n ) = (n-1)!',
+	'equation': '\\Gamma ( n ) = (n-1)!',
 	'src': 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg'
 };
 
@@ -69,7 +69,7 @@ var opts = {
 	'align': 'left',
 	'equation': '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt',
 	'label': 'eq:erf',
-	'src': 'https://cdn.rawgit.com/math-io/erf/master/img/docs/eqn.svg',
+	'src': 'https://cdn.rawgit.com/math-io/erf/master/docs/img/eqn.svg',
 	'alt': 'Error function.'
 };
 
