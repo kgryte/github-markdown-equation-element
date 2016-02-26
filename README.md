@@ -24,7 +24,12 @@ Generate an HTML `string` for displaying an SVG equation in a Github Markdown fi
 
 ``` javascript
 var html = createElement();
-// returns '<div class="equation" align="center" data-raw-text="" data-equation="">\n\t<img src="" alt="">\n\t<br>\n</div>'
+/* returns 
+*    '<div class="equation" align="center" data-raw-text="" data-equation="">
+*       <img src="" alt="">
+*       <br>
+*     </div>'
+*/
 ```
 
 The `function` accepts the following `options`:
