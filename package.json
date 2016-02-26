@@ -1,6 +1,6 @@
 {
   "name": "github-markdown-equation-element",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Generate an HTML string for displaying an SVG equation in a Github Markdown file.",
   "author": {
     "name": "Athan Reines",
