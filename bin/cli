@@ -9,7 +9,7 @@ var parseArgs = require( 'minimist' );
 var notifier = require( 'update-notifier' );
 var pkg = require( './../package.json' );
 var opts = require( './opts.json' );
-var el = require( './../lib' );
+var createElement = require( './../lib' );
 
 
 // VARIABLES //
@@ -90,7 +90,7 @@ if ( args.alt ) {
 
 // EQUATION ELEMENT //
 
-html = el( opts );
+html = createElement( opts );
 
 process.stdout.write( html+'\n', 'utf8' );
 process.exit( 0 );
