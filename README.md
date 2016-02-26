@@ -25,10 +25,10 @@ Generate an HTML `string` for displaying an SVG equation in a Github Markdown fi
 ``` javascript
 var html = createElement();
 /* returns 
-*    '<div class="equation" align="center" data-raw-text="" data-equation="">
-*       <img src="" alt="">
-*       <br>
-*     </div>'
+    '<div class="equation" align="center" data-raw-text="" data-equation="">
+       <img src="" alt="">
+       <br>
+     </div>'
 */
 ```
 
@@ -48,7 +48,12 @@ var opts = {
 };
 
 var html = createElement( opts );
-// returns '<div class="equation" align="center" data-raw-text="" data-equation="">\n\t<img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">\n\t<br>\n</div>'
+/* returns
+    '<div class="equation" align="center" data-raw-text="" data-equation="">
+      <img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">
+      <br>
+    </div>'
+*/
 ```
 
 To include a raw equation [TeX][tex] or [LaTeX][latex] `string` in the element, set the `equation` option.
@@ -60,7 +65,12 @@ var opts = {
 };
 
 var html = createElement( opts );
-// returns '<div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">\n\t<img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">\n\t<br>\n</div>'
+/* returns 
+    '<div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">
+      <img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">
+      <br>
+    </div>'
+*/
 ```
 
 
@@ -81,7 +91,12 @@ var opts = {
 var html = createElement( opts );
 
 console.log( html );
-// returns '<div class="eqn" align="left" data-raw-text="\operatorname{erf}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm dt" data-equation="eq:erf">\n\t<img src="https://cdn.rawgit.com/math-io/erf/master/docs/img/eqn.svg" alt="Error function.">\n\t<br>\n</div>'
+/* returns 
+    '<div class="eqn" align="left" data-raw-text="\operatorname{erf}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm dt" data-equation="eq:erf">
+      <img src="https://cdn.rawgit.com/math-io/erf/master/docs/img/eqn.svg" alt="Error function.">
+      <br>
+    </div>'
+*/
 ```
 
 To run the example code from the top-level application directory,
