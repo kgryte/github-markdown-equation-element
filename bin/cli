@@ -74,8 +74,8 @@ if ( args[ 'class' ] ) {
 if ( args.align ) {
 	opts.align = args.align;
 }
-if ( args.text ) {
-	opts.text = args.text;
+if ( args.equation ) {
+	opts.equation = args.equation;
 }
 if ( args.label ) {
 	opts.label = args.label;
